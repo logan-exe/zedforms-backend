@@ -5,7 +5,7 @@ const mongoConnect = (callback) => {
   mongoose
     .connect(
       process.env.MONGODB_URL ||
-        "mongodb+srv://arunlogan:3PXWuue9ftkiw0Zh@zedforms.gwirj.mongodb.net/Users?retryWrites=true&w=majority",
+      
       {
         useNewUrlParser: true,
         useCreateIndex: true,

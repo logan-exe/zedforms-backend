@@ -163,9 +163,7 @@ exports.loginUser = async (req, res, next) => {
   let token;
   try {
     token = jwt.sign(
-      { userId: user[0].user_id, email: user[0].email },
-      "supersecret_dont_share",
-      { expiresIn: "1h" }
+     /////write logic for token creation
     );
   } catch (err) {
     const error = new HttpError(
